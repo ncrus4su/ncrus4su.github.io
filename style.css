@@ -261,3 +261,28 @@ body::before {
   .glow, .glow::before, .glow::after, body::before { animation: none; }
   html { scroll-behavior: auto; }
 }
+
+/* ---------- Lexicon (numbered dreamy entries) ---------- */
+.lexicon {
+  list-style: decimal;
+  padding-left: 2.6rem;
+  display: grid;
+  gap: 34px;
+}
+.lexicon li {
+  font-family: var(--sans);
+  font-size: clamp(1.05rem, 3.6vw, 1.3rem);
+  line-height: 1.75;
+  color: var(--blush);
+  padding-left: 6px;
+}
+.lexicon li::marker {
+  font-family: var(--serif);
+  font-size: 1.15em;
+  color: var(--gold);
+}
+.lexicon i { font-family: var(--serif); color: var(--rose); }
+.lexicon .sym { color: var(--gold); opacity: .9; }
+.lexicon .script { font-family: var(--serif); font-size: 1.25em; color: var(--rose); }
+.lexicon li { transition: color .4s, transform .4s; }
+.lexicon li:hover { color: #fff; transform: translateX(4px); }
