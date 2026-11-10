@@ -330,6 +330,9 @@ body::before {
 @keyframes rise { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
 
 @media (prefers-reduced-motion: reduce) {
-  .js main section, .js main section * { opacity: 1 !important; transform: none !important; filter: none !important; transition: none !important; }
-  .hero > * { animation: none; }
+  /* no movement or blur, just a gentle fade */
+  .js main section, .js main section .lexicon li, .js main section .entries li,
+  .js main section .card, .js main section .btn { transform: none !important; filter: none !important; }
+  .hero > * { animation-name: fade; }
 }
+@keyframes fade { from { opacity: 0; } to { opacity: 1; } }
