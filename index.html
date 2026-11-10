@@ -2,100 +2,129 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <title>/velvet</title>
-  <meta name="description" content="A small hush of a house, lit by one candle.">
-  <link rel="stylesheet" href="style.css?v=3">
-  <script>document.documentElement.classList.add("js");</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>/ncrus4su</title>
+  <meta name="description" content="ncrus4su — a little pastel corner of the internet.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fredoka:wght@400;500;600&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="glow" aria-hidden="true"></div>
 
-  <header class="top">
-    <a class="brand" href="#">/velvet</a>
+  <!-- animated background -->
+  <div class="sky" aria-hidden="true">
+    <span class="blob b1"></span>
+    <span class="blob b2"></span>
+    <span class="blob b3"></span>
+    <span class="blob b4"></span>
+  </div>
+  <canvas id="sparkles" aria-hidden="true"></canvas>
+
+  <header class="topbar">
+    <a class="brand" href="#">✿ /ncrus4su</a>
     <nav>
       <a href="#about">about</a>
-      <a href="#lexicon">lexicon</a>
-      <a href="#letters">letters</a>
-      <a href="#contact">contact</a>
+      <a href="#contribution">contribution</a>
+      <a href="#article">articles</a>
+      <a href="#research">projects</a>
+      <a href="#notes">notes</a>
     </nav>
   </header>
 
   <main>
-    <section class="hero" id="about">
-      <p class="eyebrow">☾ after dark ✧</p>
-      <h1>Velvet<span>.</span></h1>
-      <p class="lede">a small hush of a house, lit by one candle. ⁕ come in, slip your shoes off, stay a while.</p>
-      <p class="muted">welcome to my little corner of the dark ♡ i'm a writer, and here i leave you my poems, my stories, and the late-night letters i couldn't keep to myself.<br>pour something warm, get comfortable. ⁕ read slowly.</p>
+    <section class="hero" id="hero">
+      <p class="tag">#desk</p>
+      <h1>ncrus4su</h1>
+      <p class="hand">a tiny garden of things I make &amp; love ☁️</p>
+    </section>
+
+    <section class="card" id="about">
+      <h2>About Me</h2>
+      <p class="lead">Hello, I'm ncrus4su.</p>
+      <p>Write a sentence or two about yourself here — what you study, what you build, what makes you happy. Replace this placeholder with your own words.</p>
+      <p class="chips">
+        <a href="#">Your School</a>
+        <a href="#">Your Lab</a>
+        <a href="#">Your Project</a>
+      </p>
       <ul class="links">
-        <li><a href="mailto:hello@example.com">hello@example.com</a></li>
-        <li><a href="https://instagram.com/">instagram</a></li>
-        <li><a href="https://x.com/">x</a></li>
+        <li><a href="https://github.com/ncrus4su">GitHub</a></li>
+        <li><a href="mailto:you@example.com">Email</a></li>
+        <li><a href="#">Twitter / X</a></li>
+        <li><a href="#">Website</a></li>
       </ul>
     </section>
 
-    <section id="lexicon">
-      <h2>a small lexicon</h2>
-      <ol class="lexicon">
-        <li>the dusk-keeper: <i>(n.)</i> ⁄ one who lingers .. most unhurried. <span class="sym">✧</span> stitched from candlelight and the last warm hour of the day, told in the softest hush. <span class="sym">⁕</span></li>
+    <div class="two-col">
+      <section class="card" id="contribution">
+        <h2>Contribution</h2>
+        <ul class="rows">
+          <li><a href="#"><b>Project name #123</b><small>What you contributed</small></a></li>
+          <li><a href="#"><b>Another project #45</b><small>Short description</small></a></li>
+          <li><a href="#"><b>Open source thing #6</b><small>Short description</small></a></li>
+        </ul>
+        <a class="more" href="#">more →</a>
+      </section>
 
-        <li>( Hour of Honeydark. ) __ midnights. <span class="sym">⸝</span> <span class="sym">♡</span> the moth of the quiet hours. <span class="sym">ⓘ</span> 은은한: / lamplight spilled slowly over the shoulders of evening.</li>
+      <section class="card" id="article">
+        <h2>Article</h2>
+        <ul class="rows">
+          <li><a href="#notes"><b>My First Post</b><small>Topic · Date</small></a></li>
+          <li><a href="#"><b>Something I Read</b><small>Author</small></a></li>
+          <li><a href="#"><b>A Place I Visited</b><small>City</small></a></li>
+        </ul>
+        <a class="more" href="#">more →</a>
+      </section>
+    </div>
 
-        <li>In the Middle of the Silk-Room: besotted by lamplight as th' curtains breathe toward the Rain +222 from .. <span class="sym">꒰</span> The Window. <span class="sym">꒱</span></li>
-
-        <li><span class="script">ℒ</span>over of Linen &amp;. the Daughter of Dusk. <span class="sym">ʚ</span> __ th' Barefoot Hour. <span class="sym">♡</span> amber eyes, half-lidded, lit from the side.</li>
-
-        <li>the slow-look: <i>(n.)</i> ⁄ a glance held one beat too long .. most tender. <span class="sym">✧</span> learned from cats, candles, and rain, whispered in the Sweetest Silence. <span class="sym">⁕</span></li>
-
-        <li><span class="script">𝒱</span>elvet, <i>(n.)</i> __ soft against the grain. <span class="sym">♡</span> what the fingertips remember after the lights go out. <span class="sym">⸝</span></li>
-      </ol>
+    <section class="strip" aria-label="Gallery">
+      <figure class="tile t1"><span>🌸</span></figure>
+      <figure class="tile t2"><span>☁️</span></figure>
+      <figure class="tile t3"><span>🦋</span></figure>
+      <figure class="tile t4"><span>🍓</span></figure>
     </section>
 
-    <section id="letters">
-      <h2>letters, left on the sill</h2>
-      <ul class="entries">
-        <li><time>09 Nov</time><a href="#">candles, kept burning past their hour ✧</a></li>
-        <li><time>02 Nov</time><a href="#">a love letter to oversized shirts ♡</a></li>
-        <li><time>26 Oct</time><a href="#">rain, red wine, and no plans ⁕</a></li>
-        <li><time>18 Oct</time><a href="#">what a month of slow evenings taught me ☾</a></li>
+    <section class="card" id="research">
+      <h2>Projects &amp; Research</h2>
+      <ul class="papers">
+        <li>
+          <a class="title" href="#">Your First Project or Paper Title</a>
+          <span class="role">First author</span>
+          <span class="meta"><a href="#">link</a> · status</span>
+        </li>
+        <li>
+          <a class="title" href="#">Your Second Project or Paper Title</a>
+          <span class="role">Contributor</span>
+          <span class="meta"><a href="#">link</a> · status</span>
+        </li>
+        <li>
+          <a class="title" href="#">Your Third Project or Paper Title</a>
+          <span class="role">Maintainer</span>
+          <span class="meta"><a href="#">link</a> · status</span>
+        </li>
       </ul>
+      <a class="more" href="#">more →</a>
     </section>
 
-    <section class="note">
-      <h2>a note</h2>
-      <p>I believe in the pull of suggestion: a glance held a beat too long, a window left open, a song turned down low. everything here is meant to be enjoyed slowly. ✧ adults only, always with consent and good taste.</p>
-    </section>
+    <article class="card reader" id="notes">
+      <p class="tag">i</p>
+      <h2>Abstract</h2>
+      <p>This is where a featured post goes — a short summary of something you wrote or something you're thinking about lately. Keep it in your own words.</p>
 
-    <section id="contact">
-      <h2>contact</h2>
-      <p>collaborations, commissions, or just a kind word. leave a note on the windowsill. ♡</p>
-      <a class="btn" href="mailto:hello@example.com">say hello</a>
-    </section>
+      <h2>Why I do what I do</h2>
+      <p>Tell your story here. Pastel colours, soft shadows and a little drifting sparkle make long-form text easier on the eyes, so don't be shy about writing a few paragraphs.</p>
+      <p>A second paragraph can go here, with <em>emphasis</em> and <a href="#">links</a> styled to match the theme.</p>
+
+      <h2>Read more</h2>
+      <p><a class="button" href="#">Open the full post →</a></p>
+    </article>
   </main>
 
   <footer>
-    <p>&copy; <span id="y"></span> velvet ♡ 18+ only</p>
+    <p>made with ♡ and a little glitter · <span id="year"></span> ncrus4su</p>
   </footer>
 
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-
-    // fade each section (and its items) in as it scrolls into view
-    (function () {
-      var secs = document.querySelectorAll('main section');
-      var items = document.querySelectorAll('.lexicon li, .entries li, .card');
-      items.forEach(function (el, i) { el.style.setProperty('--d', ((i % 6) * 0.12) + 's'); });
-      if (!('IntersectionObserver' in window)) {
-        secs.forEach(function (s) { s.classList.add('in'); });
-        return;
-      }
-      var io = new IntersectionObserver(function (entries) {
-        entries.forEach(function (e) {
-          if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
-        });
-      }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
-      secs.forEach(function (s) { io.observe(s); });
-    })();
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
