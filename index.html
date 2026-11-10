@@ -6,6 +6,7 @@
   <title>/velvet</title>
   <meta name="description" content="A small hush of a house, lit by one candle.">
   <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
   <div class="glow" aria-hidden="true"></div>
@@ -76,6 +77,25 @@
     <p>&copy; <span id="y"></span> velvet ♡ 18+ only</p>
   </footer>
 
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // fade each section (and its items) in as it scrolls into view
+    (function () {
+      var secs = document.querySelectorAll('main section');
+      var items = document.querySelectorAll('.lexicon li, .entries li, .card');
+      items.forEach(function (el, i) { el.style.setProperty('--d', ((i % 6) * 0.12) + 's'); });
+      if (!('IntersectionObserver' in window)) {
+        secs.forEach(function (s) { s.classList.add('in'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+      secs.forEach(function (s) { io.observe(s); });
+    })();
+  </script>
 </body>
 </html>
